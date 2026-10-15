@@ -1,0 +1,7 @@
+# Parallel Framework-based Helicity Decoder Config File
+heldecoder.verbose = 1
+heldecoder.heldelay = 2 #number of patterns not windows
+heldecoder.block = 1
+#crate slot ch_start ch_end model/bank
+heldecoder.map = 1 9 0 0 3564
+heldecoder.bankid = 3564
