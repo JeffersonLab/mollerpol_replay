@@ -1,34 +1,37 @@
 # map  model  crate  slot header mask clk_slot
-map 9250 1 3 00000310 ffffffff
-# map  model  crate  slot header mask clk_slot clk_chan clk_freq
+#map 9250 1 3 00000310 ffffffff 
 #map 3820 1 7 00000000 00000000 7  15 100000 # no header word 
-map 9001 1 21 0020000c ffffffff # no header word 
+map 9001 1 21 0020000c ffffffff  
+map 9250 1 3 00000310 ffffffff 7
+# map  model  crate  slot header mask clk_slot clk_chan clk_freq
+#map 3820 1 7 00000000 00000000 7  14 20000000 # no header word
 
 # variable  slot  chan  kind(1=count,2=rate)  description
-variable 3 0 1 .fadc_cal1 Claroimeter 1
-variable 3 1 1 .fadc_cal2 Claroimeter 2
-variable 3 2 1 .fadc_cal3 Claroimeter 3
-variable 3 3 1 .fadc_cal4 Claroimeter 4
-variable 3 4 1 .fadc_cal5 Claroimeter 5
-variable 3 5 1 .fadc_cal6 Claroimeter 6
-variable 3 6 1 .fadc_cal7 Claroimeter 7
-variable 3 7 1 .fadc_cal8 Claroimeter 8
+variable 3 0 1 .fadc_cal1 Calorimeter 1
+variable 3 1 1 .fadc_cal2 Calorimeter 2
+variable 3 2 1 .fadc_cal3 Calorimeter 3
+variable 3 3 1 .fadc_cal4 Calorimeter 4
+variable 3 4 1 .fadc_cal5 Calorimeter 5
+variable 3 5 1 .fadc_cal6 Calorimeter 6
+variable 3 6 1 .fadc_cal7 Calorimeter 7
+variable 3 7 1 .fadc_cal8 Calorimeter 8
 variable 3 8 1 .mps MPS
 variable 3 9 1 .qrt QRT
 variable 3 10 1 .hel Helicity
-vairable 3 11 1 .sum1_4 Calorimeter 1-4 sum 
-vairable 3 12 1 .sum5_8 Calorimeter 5-8 sum 
-vairable 3 13 1 .trig_coin Coincidence trigger between left and right
-vairable 3 14 1 .trig_sum14 Calorimeter 1-4 sum trigger
-vairable 3 15 1 .trig_sum58 Calorimeter 5-8 sum trigger
-#variable 7 0 1 .scaler_cal1 Claroimeter 1
-#variable 7 1 1 .scaler_cal2 Claroimeter 2
-#variable 7 2 1 .scaler_cal3 Claroimeter 3
-#variable 7 3 1 .scaler_cal4 Claroimeter 4
-#variable 7 4 1 .scaler_cal5 Claroimeter 5
-#variable 7 5 1 .scaler_cal6 Claroimeter 6
-#variable 7 6 1 .scaler_cal7 Claroimeter 7
-#variable 7 7 1 .scaler_cal8 Claroimeter 8
+variable 3 11 1 .sum1_4 Calorimeter 1-4 sum 
+variable 3 12 1 .sum5_8 Calorimeter 5-8 sum 
+variable 3 13 1 .trig_coin Coincidence trigger between left and right
+variable 3 14 1 .trig_sum14 Calorimeter 1-4 sum trigger
+variable 3 15 1 .trig_sum58 Calorimeter 5-8 sum trigger
+#variable 7 0 1 .scaler_cal1 Calorimeter 1
+#variable 7 1 1 .scaler_cal2 Calorimeter 2
+#variable 7 2 1 .scaler_cal3 Calorimeter 3
+#variable 7 3 1 .scaler_cal4 Calorimeter 4
+#variable 7 4 1 .scaler_cal5 Calorimeter 5
+#variable 7 5 1 .scaler_cal6 Calorimeter 6
+#variable 7 6 1 .scaler_cal7 Calorimeter 7
+#variable 7 7 1 .scaler_cal8 Calorimeter 8
+#variable 7 14 1 .clock 20MHz Clock
 #variable 7 15 1 .clock 100kHz Clock
 variable 21 0 1 .livetime TI livetime
 variable 21 1 1 .busytime TI busytime

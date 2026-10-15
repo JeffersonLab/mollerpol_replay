@@ -20,8 +20,7 @@
 #  etc.
 # The "first logical channel" is the one assigned to the first hardware channel.
 
-M.cal.detmap = 
-    1 3 0 15 0
+M.cal.detmap = 1 3 0 15 0
 # total number of PMTs
 M.cal.nelem = 16
 
